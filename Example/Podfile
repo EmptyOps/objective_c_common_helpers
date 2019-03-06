@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'objective_c_common_helpers_Example' do
+  pod 'objective_c_common_helpers', :path => '../'
+
+  target 'objective_c_common_helpers_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

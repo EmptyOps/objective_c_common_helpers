@@ -1,13 +1,20 @@
 use_frameworks!
 
-platform :ios, '8.0'
+platform :ios, '7.0'
 
+source 'https://github.com/CocoaPods/Specs.git’
+source 'https://github.com/EmptyOps/objective_c_common_helpers.git’
 target 'objective_c_common_helpers_Example' do
+    
   pod 'objective_c_common_helpers', :path => '../'
+  pod 'objective_c_core_helpers', '~>0.0.2'
+  pod 'objective_c_sqlite_helper', '~> 0.0.2'
+  pod 'SDWebImage', '~> 3.6'
+  pod 'DGActivityIndicatorView'
 
   target 'objective_c_common_helpers_Tests' do
+      
     inherit! :search_paths
-
     
   end
 end
